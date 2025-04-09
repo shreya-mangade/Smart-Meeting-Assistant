@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Smart Meeting Assistant</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+
+<body onload="voiceprompt()">
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Smart Meeting Assistant</h2>
+                        <h3>Let's Summarize</h3>
+                        <p align="center" style="font-size:25px">Read The Instructions Carefully</p>
+                            <div class="popup" onclick="myFunction()" >Click Here For The Instructions!
+  			                <span class="popuptext" id="myPopup"><p style="color:white;">- Check Your Internet Connection </br></br>- Select Valid (.wav) Audio File</p></span>
+			                </div>
+                        
+
+                    </div>
+                    <div class="get-start-area" >
+                            <p style="color:white;margin-left: 20px;font-size:20px" >Enter The Details & Select The Audio File</p>
+                        <form class="form-inline" align="center" >
+                            
+                            <input type="text" id="agenda" class="form-control email" placeholder="Enter Agenda">
+                            <input type="text" id="num_usr" class="form-control email1" placeholder="Number Of Users">
+                            <input type="button" class="submit" value="Select File" onclick="getPathToFile()" >
+                        </form>
+                    </div>
+                    <div class="get-start-area" >
+                            
+                        <form class="form-inline" align="center" >
+
+                            <input type="button" class="submit" value="Begin" onclick="gotoNext()" style="margin-top: 40px;margin-left:360px">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="welcome-thumb">
+            <img id="qr" src="" width="50%">
+        </div>
+    </section>
+</body>
+</html>
