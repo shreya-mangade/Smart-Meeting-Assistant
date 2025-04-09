@@ -1,0 +1,9 @@
+google-cloud==0.34.0
+Eel==0.12.3
+pyttsx3==2.87
+google-cloud-storage==1.27.0
+wxPython==4.0.7.post2
+docx==0.2.4
+exception==0.1.0
+python-docx==0.8.10
+docx2pdf==0.1.5
